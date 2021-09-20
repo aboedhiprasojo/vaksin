@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+
+    <title>Informasi Terkini Layanan Vaksinasi</title>
+  </head>
+  <body>
+    <!-- Start: Navbar -->
+    <nav
+      class="navbar sticky-top bg-light navbar-expand-lg navbar-light shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="img/logo-YukVaksin.svg"
+            style="width: 150px; height: 52px"
+            alt="Navbar Logo Yuk Vaksin"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li>
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="vaksinasi.html">Info Vaksin</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="pesan-antar.html"
+                >Layanan Pesan Antar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rumah-sakit.html">Rumah Sakit</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End: Navbar -->
+
+    <!-- Start: Breadcumb -->
+    <div class="container mt-5">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Layanan Pesan Antar
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <!-- End: Breadcumb -->
+
+    <!-- Start: Hero Layanan Section -->
+    <section class="hero py-5" id="#home">
+      <div class="container-lg">
+        <div class="row mt-5 align-items-center align-content-center">
+          <div class="col-md-6 mt-5 mt-md-0">
+            <div class="home-description">
+              <h2>Layanan Pesan Antar</h2>
+              <p>
+                Layanan ini gratis khusus masyarakat yang terkena COVID-19 dan
+                isolasi mandiri. Anda konsultasikan kepada kami jika Anda
+                membutuhkan ”Makanan, minuman, obat, hingga kebutuhan lain.”
+              </p>
+              <a href="contact.html" class="btn btn-primary">Hubungi Kami</a>
+              <a href="details.html" class="btn btn-help">Cek Details</a>
+            </div>
+
+            <div class="feedback-title row mt-5">
+              <div class="col-sm-4">
+                <div class="feedback-item">
+                  <h4>20,8%</h4>
+                  <p>Sent Successfully</p>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="feedback-item">
+                  <h4>41,1%</h4>
+                  <p>Positive Reviews</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-5 mt-md-0">
+            <div class="home-img text-end">
+              <img
+                class="img-fluid"
+                src="img/hero-layanan.svg"
+                alt="Hero Vaksin"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End: Hero Layanan Section -->
+
+    <!-- Start: Search Rumah Sakit -->
+    <section class="rumah-sakit py-5">
+      <div class="rs-hero">
+        <div class="container">
+          <div class="row my-3">
+            <div class="col-12 rs-header-title">
+              <h2>Ada yang bisa kami bantu ?</h2>
+              <p>
+                Cari makanan, minuman, obat, kebutuhan lain dengan langkah mudah
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 rs-header-search">
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Cari Menu atau barang"
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="button-addon1"
+                >
+                  Cari
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End: Search Rumah Sakit -->
+
+    <!-- Start: Features -->
+    <section class="features p-5">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col">
+            <h2>Sering Dicari</h2>
+            <p>Barang yang sering dicari dalam 1 minggu terakhir</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-5 col-md-4 col-lg-2">
+            <figure class="figure-features">
+              <div class="figure-img">
+                <img
+                  class="figure-produk img-fluid"
+                  src="img/features-pesan-antar/ayam-bakar-pak-agung.jpeg"
+                  alt="Produk-1"
+                />
+              </div>
+              <figcaption class="figure-caption">
+                <h5 class="link-produk">
+                  <a href="#">Ayam Bakar Pak Agung</a>
+                </h5>
+                <p class="price-produk">IDR 10.000</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12 col-sm-5 col-md-4 col-lg-2">
+            <figure class="figure-features">
+              <div class="figure-img">
+                <img
+                  class="figure-produk img-fluid"
+                  src="img/features-pesan-antar/roti-bakar-pak-santoso.jpg"
+                  alt="Produk-2"
+                />
+              </div>
+              <figcaption class="figure-caption">
+                <h5 class="link-produk">
+                  <a href="#">Roti Bakar Pak Santoso</a>
+                </h5>
+                <p class="price-produk">IDR 10.000</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12 col-sm-5 col-md-4 col-lg-2">
+            <figure class="figure-features">
+              <div class="figure-img">
+                <img
+                  class="figure-produk img-fluid"
+                  src="img/features-pesan-antar/oxygen-green.png"
+                  alt="Produk-3"
+                />
+              </div>
+              <figcaption class="figure-caption">
+                <h5 class="link-produk">
+                  <a href="#">Oxycan Green Kaleng</a>
+                </h5>
+                <p class="price-produk">IDR 50.000</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12 col-sm-5 col-md-4 col-lg-2">
+            <figure class="figure-features">
+              <div class="figure-img">
+                <img
+                  class="figure-produk img-fluid"
+                  src="img/features-pesan-antar/hand-sanitizer-spray.png"
+                  alt="Produk-4"
+                />
+              </div>
+              <figcaption class="figure-caption">
+                <h5 class="link-produk">
+                  <a href="#"> Hand Sanitizer 55 ml </a>
+                </h5>
+                <p class="price-produk">IDR 10.500</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12 col-sm-5 col-md-4 col-lg-2">
+            <figure class="figure-features">
+              <div class="figure-img">
+                <img
+                  class="figure-produk img-fluid"
+                  src="img/features-pesan-antar/susu-bear-brand.png"
+                  alt="Produk-5"
+                />
+              </div>
+              <figcaption class="figure-caption">
+                <h5 class="link-produk">
+                  <a href="#">Susu Bear Brand</a>
+                </h5>
+                <p class="price-produk">IDR 13.000</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12 col-sm-5 col-md-4 col-lg-2">
+            <figure class="figure-features">
+              <div class="figure-img">
+                <img
+                  class="figure-produk img-fluid"
+                  src="img/features-pesan-antar/Gurame-bakar-mak-ijah.jpg"
+                  alt="Produk-6"
+                />
+              </div>
+              <figcaption class="figure-caption">
+                <h5 class="link-produk">
+                  <a href="#">Gurame Bakar Mak Ijah</a>
+                </h5>
+                <p class="price-produk">IDR 13.000</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End: Features -->
+
+    <!-- Start: Footer -->
+    <footer class="mt-5">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <img
+                class="mb-3"
+                src="img/logo-YukVaksin.svg"
+                alt="Footer Logo Yuk Vaksin"
+              />
+              <p>
+                It does not matter how slowly you go as long as you do not stop.
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-link">
+              <h4>Vaksinasi</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">About Us</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">Feutures</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">Schedule</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-link">
+              <h4>Support</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">Contact</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i>
+                  <a href="#">Administration</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i>
+                  <a href="#">Call Center</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-link">
+              <h4>Company</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">FAQ's</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">Partner</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-link">
+              <h4>Our Social Network</h4>
+              <p>
+                Follow akun media sosial kami, untuk lebih update informasi
+                lanjutan
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Yuk Vaksin</span></strong
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- End: Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

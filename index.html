@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+
+    <title>Informasi Terkini Layanan Vaksinasi</title>
+  </head>
+  <body>
+    <!-- Start: Navbar -->
+    <nav
+      class="navbar sticky-top bg-light navbar-expand-lg navbar-light shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="img/logo-YukVaksin.svg"
+            style="width: 150px; height: 52px"
+            alt="Navbar Logo Yuk Vaksin"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="vaksinasi.html">Info Vaksin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pesan-antar.html"
+                >Layanan Pesan Antar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rumah-sakit.html">Rumah Sakit</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End: Navbar -->
+
+    <!-- Start: Hero Section -->
+    <section class="hero py-5" id="#home">
+      <div class="container-lg">
+        <div class="row mt-5 align-items-center align-content-center">
+          <div class="col-md-6 mt-5 mt-md-0">
+            <div class="home-description">
+              <h2>Vaccine now to stop the spread of the virus</h2>
+              <p>
+                The COVID-19 vaccination programme seeks to <br />
+                protect Indonesians against COVID-19.
+              </p>
+              <a href="" class="btn btn-primary">Get Vaccine Now</a>
+              <a href="help-center.html" class="btn btn-help">Help Center</a>
+            </div>
+
+            <div class="feedback-title row mt-5">
+              <h2>Participan</h2>
+              <div class="col-sm-4">
+                <div class="feedback-item">
+                  <h4>19,8%</h4>
+                  <p>Minimum 1 Dosis</p>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="feedback-item">
+                  <h4>36,4%</h4>
+                  <p>Sudah Vaksin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-5 mt-md-0">
+            <div class="home-img text-end">
+              <img
+                class="img-fluid"
+                src="img/hero-vaksin.svg"
+                alt="Hero Vaksin"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End: Hero Section -->
+
+    <!-- Start: Sponsor -->
+    <section class="brands">
+      <div class="container">
+        <div class="row p-5">
+          <div class="col-md mt-5">
+            <img
+              class="img-fluid"
+              src="img/sponsor/Mask Group-01.png"
+              alt="Sponsor 1"
+            />
+          </div>
+
+          <div class="col-md mt-5">
+            <img
+              class="img-fluid"
+              src="img/sponsor/Mask Group-02.png"
+              alt="Sponsor 2"
+            />
+          </div>
+
+          <div class="col-md mt-5">
+            <img
+              class="img-fluid"
+              src="img/sponsor/Mask Group-03.png"
+              alt="Sponsor 3"
+            />
+          </div>
+
+          <div class="col-md mt-5">
+            <img
+              class="img-fluid"
+              src="img/sponsor/Mask Group-04.png"
+              alt="Sponsor 4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End: Sponsor -->
+
+    <!-- Start: Product Description -->
+    <section class="product-description p-5">
+      <div
+        class="container-fluid pl-lg-5 pr-lg-5 pl-md-3 pr-md-3 pl-sm-2 pr-sm-2"
+      >
+        <div class="row justify-content-center mr-lg-5 mr-sm-5 ml-lg-5 ml-sm-5">
+          <div class="col-lg-12 col-sm-6 col-12 mb-5 mr-3 ml-3">
+            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pencegahan-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#pencegahan"
+                  type="button"
+                  role="tab"
+                  aria-controls="pencegahan"
+                  aria-selected="true"
+                >
+                  Pencegahan
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="penanganan-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#penanganan"
+                  type="button"
+                  role="tab"
+                  aria-controls="penanganan"
+                  aria-selected="false"
+                >
+                  Penanganan
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pencegahan"
+                role="tabpanel"
+                aria-labelledby="pencegahan-tab"
+              >
+                <h3 class="text-center text-title pt-5 mb-4">
+                  Ayo Lindungi diri dari
+                  <span class="corona-text">COVID-19</span>
+                </h3>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <img
+                      src="img/ic_batuk.png"
+                      class="rounded-circle mx-auto d-block"
+                      alt="Batuk"
+                      width="170"
+                      height="170"
+                    />
+                    <p class="text-detail text-center p-3">
+                      Terapkan etika batuk atau bersin (dengan menutup mulut dan
+                      hidung), dan jangan meludah di sembarangan tempat
+                    </p>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <img
+                      src="img/ic_bersih_hp.png"
+                      class="rounded-circle mx-auto d-block"
+                      alt="Selalu Bersihkan Barang"
+                      width="170"
+                      height="170"
+                    />
+                    <p class="text-detail text-center p-3">
+                      Selalu bersihkan benda yang sering disentuh
+                    </p>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <img
+                      src="img/ic_gunakan_masker.png"
+                      class="rounded-circle mx-auto d-block"
+                      alt="Selalu Gunakan Masker"
+                      width="170"
+                      height="170"
+                    />
+                    <p class="text-detail text-center p-3">
+                      Gunakan masker jika Anda sakit dan segera periksa diri ke
+                      fasilitas kesehatan terdekat
+                    </p>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <img
+                      src="img/ic_cuci_tangan.png"
+                      class="rounded-circle mx-auto d-block"
+                      alt="Selalu Mencuci Tangan"
+                      width="170"
+                      height="170"
+                    />
+                    <p class="text-detail text-center p-3">
+                      Selalu cuci tangan dengan sabun
+                    </p>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <img
+                      src="img/ic_ngucek_wajah.png"
+                      class="rounded-circle mx-auto d-block"
+                      alt="Selalu Mencuci Tangan"
+                      width="170"
+                      height="170"
+                    />
+                    <p class="text-detail text-center p-3">
+                      Hindari menyentuh mata, hidung, dan mulut dengan tangan
+                      yang belum di cuci
+                    </p>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <img
+                      src="img/ic_selalu_olahraga.png"
+                      class="rounded-circle mx-auto d-block"
+                      alt="Selalu Mencuci Tangan"
+                      width="170"
+                      height="170"
+                    />
+                    <p class="text-detail text-center p-3">
+                      Selalu konsumsi makanan bergizi dan rajinlah berolahraga
+                      setiap hari
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="penanganan"
+                role="tabpanel"
+                aria-labelledby="penanganan-tab"
+              >
+                <div class="row">
+                  <h3 class="text-center text-title pt-3 mb-4 font-header">
+                    Bagaimana Gejala
+                    <span class="corona-text"> COVID-19 </span> ?
+                  </h3>
+                  <p class="text-detail text-center mr-2 ml-2 font-content">
+                    Orang yang terinfeksi memiliki gejala seperti demam, batuk,
+                    dan kesulitan bernafas. <br />
+                    Gejala dapat berkembang menjadi pneumonia berat.
+                  </p>
+                  <h3 class="text-center text-title pt-5 mb-5 font-header">
+                    Lakukan Hal Berikut <br />
+                    Jika Anda mengalami gejala mirip
+                    <span class="corona-text">COVID-19</span>
+                  </h3>
+                  <div class="col-md-10 col-sm-12 offset-lg-1 pb-3">
+                    <ul class="list-unstyled">
+                      <li class="pb-3 text-detail text-justify">
+                        <i class="fa fa-check fc-green pr-3"></i>
+                        Hubungi nomor layanan COVID-19 di (024) 3580713 atau
+                        082313600560 untuk mendapatkan penanganan
+                      </li>
+                      <li class="pb-3 text-detail text-justify">
+                        <i class="fa fa-check fc-green pr-3"></i>
+                        Kenakan masker dan ganti secara berkala, agar tidak
+                        menular ke orang lain
+                      </li>
+                      <li class="pb-3 text-detail text-justify">
+                        <i class="fa fa-check fc-green pr-3"></i>
+                        Tinggal di dalam rumah dan jaga jarak dengan orang lain
+                      </li>
+                      <li class="pb-3 text-detail text-justify">
+                        <i class="fa fa-check fc-green pr-3"></i>
+                        Minta bantuan teman, anggota keluarga, atau layanan jasa
+                        lain untuk menyelesaikan urusan di luar rumah
+                      </li>
+                      <li class="pb-3 text-detail text-justify">
+                        <i class="fa fa-check fc-green pr-3"></i>
+                        Lakukan semua poin diatas selama 14 hari untuk membantu
+                        mengurangi penyebaran virus
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End: Product Description -->
+
+    <!-- Start: Jenis Vaksin Section -->
+    <section class="jenis-vaksin py-5">
+      <div class="container py-4">
+        <div class="row mb-4">
+          <div class="col">
+            <h2>Jenis-jenis Vaksin</h2>
+            <p>Varian vaksin yang digunakan di seluruh Indonesia</p>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div
+              class="jenis-vaksin-item shadow-sm p-4 rounded"
+              style="background: #fffafc"
+            >
+              <div class="icon my-3">
+                <img src="img/ic_suntik.svg" alt="" />
+              </div>
+              <h3 class="py-2">Moderna</h3>
+              <p class="teks-deskripsi">
+                Final trial results confirm this vaccine has a 94% efficacy, and
+                the data has been set <span class="see-more">see more...</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div
+              class="jenis-vaksin-item shadow-sm p-4 rounded"
+              style="background: #fffafc"
+            >
+              <div class="icon my-3">
+                <img src="img/ic_suntik.svg" alt="" />
+              </div>
+              <h3 class="py-2">Sinovac</h3>
+              <p class="teks-deskripsi">
+                Sinovac COVID-19 vaccine, is an inactivated virus COVID-19
+                vaccine developed <span class="see-more">see more...</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div
+              class="jenis-vaksin-item shadow-sm p-4 rounded"
+              style="background: #fffafc"
+            >
+              <div class="icon my-3">
+                <img src="img/ic_suntik.svg" alt="" />
+              </div>
+              <h3 class="py-2">Pzifer</h3>
+              <p class="teks-deskripsi">
+                Developed by the University of Oxford, has a vaccine officacy of
+                up to 90% <span class="see-more">see more...</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End: Jenis Vaksin Section -->
+
+    <!-- Start: Pasca Vaksin -->
+    <section class="pasca-vaksin py-5">
+      <div class="container py-4">
+        <div class="row mb-4">
+          <div class="col">
+            <h2>Pasca Vaksinasi</h2>
+            <p>
+              Hal-hal yang perlu diperhatikan setelah <br />
+              Anda mendapatkan vaksinasi
+            </p>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-md-6 col-lg-6 mb-4">
+            <div class="konten-pasca-vaksin">
+              <div class="col-2 benefit mt-3 my-3">
+                <img class="icon" src="img/ic_ceklist.svg" />
+              </div>
+              <p class="col m-0 descripsi-konten">
+                Tetap patuhi protokol kesehatan, menjaga jarak, dan selalu
+                menggunakan masker
+              </p>
+
+              <div class="col-2 benefit mt-3 my-3">
+                <img class="icon" src="img/ic_ceklist.svg" />
+              </div>
+              <p class="col m-0 descripsi-konten">
+                monitor kesehatan, sangat penting untuk mengetahui apakah ada
+                efek samping dari vaksin
+              </p>
+
+              <div class="col-2 benefit mt-3 my-3">
+                <img class="icon" src="img/ic_ceklist.svg" />
+              </div>
+              <p class="col m-0 descripsi-konten">
+                Berkonsultasi dengan Dokter, jika terjadi efek samping seperti
+                gejala alergi
+              </p>
+
+              <div class="col-2 benefit mt-3 my-3">
+                <img class="icon" src="img/ic_ceklist.svg" />
+              </div>
+              <p class="col m-0 descripsi-konten">
+                Persiapkan diri untuk mendapatkan vaksin dosis kedua, dengan
+                makan bergizi dan istirahat cukup
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 text-end col-12 d-none d-sm-block">
+            <img
+              src="img/vaksin-images.svg"
+              alt=""
+              height="450px"
+              width="575px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End: Pasca Vaksin -->
+
+    <!-- Start: Daftar Vaksinasi -->
+    <section class="daftar-vaksin py-5">
+      <div class="container-lg py-4">
+        <div
+          class="row justify-content-center"
+          style="
+            background: linear-gradient(
+              92.33deg,
+              #4384ee -0.5%,
+              #1ba8f9 100.43%
+            );
+            height: 213px;
+          "
+        >
+          <div class="col-lg-8 text-center">
+            <div class="daftar-title">
+              <h4 class="mb-4">Yukk!! Segera daftarkan diri Anda</h4>
+              <a href="#">Daftar Vaksin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End: Daftar Vaksinasi -->
+
+    <!-- Start: Footer -->
+    <footer class="mt-5">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <img
+                class="mb-3"
+                src="img/logo-YukVaksin.svg"
+                alt="Footer Logo Yuk Vaksin"
+              />
+              <p>
+                It does not matter how slowly you go as long as you do not stop.
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-link">
+              <h4>Vaksinasi</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">About Us</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">Feutures</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">Schedule</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-link">
+              <h4>Support</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">Contact</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i>
+                  <a href="#">Administration</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i>
+                  <a href="#">Call Center</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-link">
+              <h4>Company</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">FAQ's</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">Partner</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-link">
+              <h4>Our Social Network</h4>
+              <p>
+                Follow akun media sosial kami, untuk lebih update informasi
+                lanjutan
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Yuk Vaksin</span></strong
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- End: Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

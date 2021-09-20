@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+
+    <title>Informasi Terkini Layanan Vaksinasi</title>
+  </head>
+  <body>
+    <!-- Start: Navbar -->
+    <nav
+      class="navbar sticky-top bg-light navbar-expand-lg navbar-light shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="img/logo-YukVaksin.svg"
+            style="width: 150px; height: 52px"
+            alt="Navbar Logo Yuk Vaksin"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li>
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="vaksinasi.html">Info Vaksin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pesan-antar.html"
+                >Layanan Pesan Antar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="rumah-sakit.html"
+                >Rumah Sakit</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End: Navbar -->
+
+    <!-- Start: Breadcumb -->
+    <div class="container mt-5">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Rumah Sakit
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <!-- End: Breadcumb -->
+
+    <!-- Start: Search Rumah Sakit -->
+    <section class="rumah-sakit py-5">
+      <div class="rs-hero">
+        <div class="container">
+          <div class="row my-3">
+            <div class="col-12 rs-header-title">
+              <h2>Cari Rumah Sakit Rujukan Terdekat</h2>
+              <p>Cari rumah sakit dan buat janji dengan langkah mudah</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 rs-header-search">
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Cari Nama atau Kabupaten Kota"
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="button-addon1"
+                >
+                  Cari
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End: Search Rumah Sakit -->
+
+    <!-- Start: Layanan Rumah Sakit -->
+    <section class="layanan-hospital py-5">
+      <div class="container">
+        <div class="layanan-card-background">
+          <div class="row">
+            <div class="col-12">
+              <div class="col-12 layanan-header-title p-5">
+                <h2>Layanan dari Pihak Rumah Sakit</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row p-5 row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="img/layanan-RS/tes-covid.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                  width="100"
+                  height="250"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Tes COVID-19</h5>
+                  <p class="card-text">
+                    Tes COVID-19 adalah tes untuk mendeteksi virus corona atau
+                    severe acute respiratory syndrome coronavirus 2 (SARS-Cov-2)
+                    <span class="links-see-all"
+                      ><a href="#">see all...</a></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="img/layanan-RS/jantung.png"
+                  class="card-img-top"
+                  alt="..."
+                  width="100"
+                  height="250"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Jantung</h5>
+                  <p class="card-text">
+                    Pemeriksaan jantung dan pembuluh darah berkaitan dengan
+                    mencegah, mendiagnosis, dan melakukan pengobatan berbagai
+                    <span class="links-see-all"
+                      ><a href="#">see all...</a></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="img/layanan-RS/penyakit-dalam.png"
+                  class="card-img-top"
+                  alt="..."
+                  width="100"
+                  height="250"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Penyakit Dalam</h5>
+                  <p class="card-text">
+                    Pemeriksaan Penyakit Dalam berfokus pada penanganan berbagai
+                    macam penyakit yang berkaitan dengan
+                    <span class="links-see-all"
+                      ><a href="#">see all...</a></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="img/layanan-RS/pemeriksaan-mata.png"
+                  class="card-img-top"
+                  alt="..."
+                  width="100"
+                  height="250"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pemeriksaan Mata</h5>
+                  <p class="card-text">
+                    Pemeriksaan Mata berfokus pada penanganan mata manusia
+                    dengan melakukan
+                    <span class="links-see-all"
+                      ><a href="#">see all...</a></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="links-layanan-all text-center">
+            <a href="">Lihat Semua Layanan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End: Layanan Rumah Sakit -->
+
+    <!-- Start: Data Rumah Sakit -->
+    <section class="data-hospital py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1 pt-3 pb-md-0 pb-3">
+            <form action="" method="GET">
+              <div class="row">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="" style="width: 100%"
+                        >Pilih Tempat Tidur</label
+                      >
+                      <div class="d-flex flex-row">
+                        <div
+                          class="text-center"
+                          id="form-check-label1"
+                          style="
+                            padding: 6.5px 0px;
+                            width: 50% !important;
+                            border-radius: 5px;
+                            border: 1px solid rgb(12, 183, 183);
+                            color: rgb(255, 255, 255);
+                            background-color: rgb(128, 128, 128);
+                          "
+                        >
+                          <input
+                            type="radio"
+                            id="covidRadioS1"
+                            name="jenis"
+                            value="1"
+                          />
+                          <label for="covidRadioS1" class="form-check-label"
+                            >COVID-19</label
+                          >
+                        </div>
+
+                        <div
+                          class="text-center"
+                          id="form-check-label2"
+                          style="
+                            padding: 6.5px 0px;
+                            width: 50% !important;
+                            border-radius: 5px;
+                            border: 1px solid rgb(128, 128, 128);
+                            background-color: transparent;
+                            color: rgb(0, 0, 0);
+                            margin-left: 15px;
+                          "
+                        >
+                          <input
+                            type="radio"
+                            id="covidRadioS2"
+                            name="jenis"
+                            value="2"
+                          />
+                          <label for="covidRadioS2" class="form-check-label"
+                            >NON COVID-19</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="">Propinsi</label>
+                      <div class="dropdown">
+                        <a
+                          class="btn btn-secondary dropdown-toggle"
+                          href="#"
+                          role="button"
+                          id="dropdownMenuLink"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          style="
+                            background: none;
+                            border: 1px solid rgb(128, 128, 128);
+                            color: #17181f;
+                          "
+                        >
+                          Pilih Provinsi
+                        </a>
+
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuLink"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="#">Aceh</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Sumatera Utama</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Sumatera Barat</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Sumatera Selatan</a
+                            >
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Kalimantan Utara</a
+                            >
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Kalimantan Timur</a
+                            >
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Kalimantan Barat</a
+                            >
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Kalimantan Tengah</a
+                            >
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Kalimantan Selatan</a
+                            >
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Sulawesi Utara</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Sulawesi Tengah</a
+                            >
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Sulawesi Tenggara</a
+                            >
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Sulawesi Selatan</a
+                            >
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Sulawesi Barat</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Maluku</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Papua</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">DKI Jakarta</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">DI Yogyakarta</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Jawa Tengah</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Jawa Timur</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Jawa Barat</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Bali</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="">Kab/Kota</label>
+                      <div class="dropdown">
+                        <a
+                          class="btn btn-secondary dropdown-toggle"
+                          href="#"
+                          role="button"
+                          id="dropdownMenuLink"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          style="
+                            background: none;
+                            border: 1px solid rgb(128, 128, 128);
+                            color: #17181f;
+                          "
+                        >
+                          --Semua--
+                        </a>
+
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuLink"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Kota Banda Aceh</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Nias</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Kepulauan Mentawai</a
+                            >
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Kota Palembang</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Nunukan</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Kutai Kartanegara</a
+                            >
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Kota Pontianak</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Kota Palangka Raya</a
+                            >
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Kota Banjarmasin</a
+                            >
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Minahasa</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Kota Palu</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Kota Kendari</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Kota Makassar</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Polewali Mandar</a
+                            >
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Kota Ambon</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Nabire</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Kota Jakarta Pusat</a
+                            >
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Sleman</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Semarang</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Kota Surabaya</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="#">Cirebon</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="">Gianyar</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="emp" style="padding-top: 20px">
+                      <input
+                        type="submit"
+                        class="btn cari"
+                        style="
+                          background-color: #0cb7b7;
+                          color: #fff;
+                          padding: 6px 40px 6px 40px;
+                        "
+                        value="Cari"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div
+                    class="info-RS-background mt-5"
+                    style="background-color: #fff"
+                  >
+                    <div class="row p-2 mt-3">
+                      <div
+                        class="col-md-8 d-flex align-items-center pb-md-0 pb-2"
+                      >
+                        <span>
+                          <b>Pekalongan dan Sekitarnya </b>
+                        </span>
+                        <span style="margin-left: 5px !important; color: grey">
+                          ditemukan
+                        </span>
+                        <b> 10 Rumah Sakit</b>
+                      </div>
+                    </div>
+
+                    <div class="col-md-10 offset-md-1 mb-2 mt-4">
+                      <div class="row">
+                        <div class="cardRS col-md-12 mb-2">
+                          <div
+                            class="card-background"
+                            style="
+                              background-color: #f9fff6;
+                              border-radius: 10px;
+                            "
+                          >
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-md-7">
+                                  <h5 class="mb-2" style="color: #17181f">
+                                    RS Umum Siaga Medika Pemalang
+                                  </h5>
+                                  <p
+                                    class="mb-0"
+                                    style="
+                                      color: #4d514d;
+                                      font-size: 14px;
+                                      font-weight: 300;
+                                    "
+                                  >
+                                    Jl. Perintis Kemerdekaan No. 1
+                                  </p>
+                                </div>
+
+                                <div class="col-md-5 text-right">
+                                  <p
+                                    class="mt-0 mb-1"
+                                    style="font-size: 13px; color: grey"
+                                  >
+                                    Info UGD Khusus COVID
+                                  </p>
+                                  <p
+                                    class="mb-0"
+                                    style="font-size: 18px; color: #4d514d"
+                                  >
+                                    Tersedia <b>9</b> bed kosong IGD
+                                  </p>
+                                  <p
+                                    class="mb-0"
+                                    style="font-size: 14px; color: #4d514d"
+                                  >
+                                    Tanpa Antrian Pasien
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              class="card-footer text-right"
+                              style="background-color: #f1f3f0"
+                            >
+                              <div>
+                                <i style="font-size: 13px; color: grey"
+                                  >Konfirmasi Bed</i
+                                >
+                                <i
+                                  class="fa fa-phone"
+                                  style="color: #17181f; margin-left: 10px"
+                                ></i>
+                                <span style="font-size: 13px; color: grey"
+                                  >0284324777</span
+                                >
+                                <div class="btn bed-details">
+                                  <a
+                                    href="https://yankes.kemkes.go.id/app/siranap/tempat_tidur?kode_rs=3327044&jenis=1&propinsi=33prop&kabkota=3327"
+                                    class="btn ml-1"
+                                    style="
+                                      background-color: #0cb7b7;
+                                      color: #ffffff;
+                                      padding: 6px 10px 6px 10px;
+                                      margin-left: 20px;
+                                    "
+                                  >
+                                    <i class="fa fa-bed" aria-hidden="true">
+                                      Bed Details</i
+                                    >
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-10 offset-md-1 mb-2 mt-4">
+                      <div class="row">
+                        <div class="cardRS col-md-12 mb-2">
+                          <div
+                            class="card-background"
+                            style="
+                              background-color: #f9fff6;
+                              border-radius: 10px;
+                            "
+                          >
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-md-7">
+                                  <h5 class="mb-2" style="color: #17181f">
+                                    RS Umum Daerah Kraton Kab. Pekalongan
+                                  </h5>
+                                  <p
+                                    class="mb-0"
+                                    style="
+                                      color: #4d514d;
+                                      font-size: 14px;
+                                      font-weight: 300;
+                                    "
+                                  >
+                                    Jl. Veteran 31,Pekalongan
+                                  </p>
+                                </div>
+
+                                <div class="col-md-5 text-right">
+                                  <p
+                                    class="mt-0 mb-1"
+                                    style="font-size: 13px; color: grey"
+                                  >
+                                    Info Khusus Rawat Inap
+                                  </p>
+                                  <p
+                                    class="mb-0"
+                                    style="font-size: 18px; color: #4d514d"
+                                  >
+                                    Tersedia <b>4</b> bed kosong R. Flamboyan
+                                  </p>
+                                  <p
+                                    class="mb-0"
+                                    style="font-size: 14px; color: #4d514d"
+                                  >
+                                    Tanpa Antrian Pasien
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              class="card-footer text-right"
+                              style="background-color: #f1f3f0"
+                            >
+                              <div>
+                                <i style="font-size: 13px; color: grey"
+                                  >Konfirmasi Bed</i
+                                >
+                                <i
+                                  class="fa fa-phone"
+                                  style="color: #17181f; margin-left: 10px"
+                                ></i>
+                                <span style="font-size: 13px; color: grey"
+                                  >0285421621</span
+                                >
+                                <div class="btn bed-details">
+                                  <a
+                                    href="https://yankes.kemkes.go.id/app/siranap/tempat_tidur?kode_rs=3326011&jenis=2&propinsi=33prop&kabkota=3326"
+                                    class="btn ml-1"
+                                    style="
+                                      background-color: #0cb7b7;
+                                      color: #ffffff;
+                                      padding: 6px 10px 6px 10px;
+                                      margin-left: 20px;
+                                    "
+                                  >
+                                    <i class="fa fa-bed" aria-hidden="true">
+                                      Bed Details</i
+                                    >
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-10 offset-md-1 mb-2 mt-4">
+                      <div class="row">
+                        <div class="cardRS col-md-12 mb-2">
+                          <div
+                            class="card-background"
+                            style="
+                              background-color: #f9fff6;
+                              border-radius: 10px;
+                            "
+                          >
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-md-7">
+                                  <h5 class="mb-2" style="color: #17181f">
+                                    RS Umum Islam PKU Muhammadiyah Pekajangan
+                                  </h5>
+                                  <p
+                                    class="mb-0"
+                                    style="
+                                      color: #4d514d;
+                                      font-size: 14px;
+                                      font-weight: 300;
+                                    "
+                                  >
+                                    Jl. Raya Ambokembang No.42-44 Pekalongan
+                                  </p>
+                                </div>
+
+                                <div class="col-md-5 text-right">
+                                  <p
+                                    class="mt-0 mb-1"
+                                    style="font-size: 13px; color: grey"
+                                  >
+                                    Info Khusus Rawat Inap
+                                  </p>
+                                  <p
+                                    class="mb-0"
+                                    style="font-size: 18px; color: #4d514d"
+                                  >
+                                    Tersedia <b>3</b> bed kosong R. Bougenville
+                                    I
+                                  </p>
+                                  <p
+                                    class="mb-0"
+                                    style="font-size: 14px; color: #4d514d"
+                                  >
+                                    Tanpa Antrian Pasien
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              class="card-footer text-right"
+                              style="background-color: #f1f3f0"
+                            >
+                              <div>
+                                <i style="font-size: 13px; color: grey"
+                                  >Konfirmasi Bed</i
+                                >
+                                <i
+                                  class="fa fa-phone"
+                                  style="color: #17181f; margin-left: 10px"
+                                ></i>
+                                <span style="font-size: 13px; color: grey"
+                                  >0285785133</span
+                                >
+                                <div class="btn bed-details">
+                                  <a
+                                    href="https://yankes.kemkes.go.id/app/siranap/tempat_tidur?kode_rs=3326016&jenis=2&propinsi=33prop&kabkota=3326"
+                                    class="btn ml-1"
+                                    style="
+                                      background-color: #0cb7b7;
+                                      color: #ffffff;
+                                      padding: 6px 10px 6px 10px;
+                                      margin-left: 20px;
+                                    "
+                                  >
+                                    <i class="fa fa-bed" aria-hidden="true">
+                                      Bed Details</i
+                                    >
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-10 offset-md-1 mb-2 mt-4">
+                      <div class="row">
+                        <div class="cardRS col-md-12 mb-2">
+                          <div
+                            class="card-background"
+                            style="
+                              background-color: #f9fff6;
+                              border-radius: 10px;
+                            "
+                          >
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-md-7">
+                                  <h5 class="mb-2" style="color: #17181f">
+                                    RS Umum Daerah Kajen Kab. Pekalongan
+                                  </h5>
+                                  <p
+                                    class="mb-0"
+                                    style="
+                                      color: #4d514d;
+                                      font-size: 14px;
+                                      font-weight: 300;
+                                    "
+                                  >
+                                    Jl. Raya Karangsari Karanganyar Kab.
+                                    Pekalongan
+                                  </p>
+                                </div>
+
+                                <div class="col-md-5 text-right">
+                                  <p
+                                    class="mt-0 mb-1"
+                                    style="font-size: 13px; color: grey"
+                                  >
+                                    Info Khusus Rawat Inap
+                                  </p>
+                                  <p
+                                    class="mb-0"
+                                    style="font-size: 18px; color: #4d514d"
+                                  >
+                                    Tersedia <b>3</b> bed kosong R. Melati
+                                  </p>
+                                  <p
+                                    class="mb-0"
+                                    style="font-size: 14px; color: #4d514d"
+                                  >
+                                    Tanpa Antrian Pasien
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              class="card-footer text-right"
+                              style="background-color: #f1f3f0"
+                            >
+                              <div>
+                                <i style="font-size: 13px; color: grey"
+                                  >Konfirmasi Bed</i
+                                >
+                                <i
+                                  class="fa fa-phone"
+                                  style="color: #17181f; margin-left: 10px"
+                                ></i>
+                                <span style="font-size: 13px; color: grey"
+                                  >081229355569
+                                </span>
+                                <div class="btn bed-details">
+                                  <a
+                                    href="https://yankes.kemkes.go.id/app/siranap/tempat_tidur?kode_rs=3326038&jenis=2&propinsi=33prop&kabkota=3326"
+                                    class="btn ml-1"
+                                    style="
+                                      background-color: #0cb7b7;
+                                      color: #ffffff;
+                                      padding: 6px 10px 6px 10px;
+                                      margin-left: 20px;
+                                    "
+                                  >
+                                    <i class="fa fa-bed" aria-hidden="true">
+                                      Bed Details</i
+                                    >
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-10 offset-md-1 mb-2 mt-4">
+                      <div class="row">
+                        <div class="cardRS col-md-12 mb-2">
+                          <div
+                            class="card-background"
+                            style="
+                              background-color: #f9fff6;
+                              border-radius: 10px;
+                            "
+                          >
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-md-7">
+                                  <h5 class="mb-2" style="color: #17181f">
+                                    RS Ibu dan Anak Aisyiyah Pekajangan
+                                    Pekalongan
+                                  </h5>
+                                  <p
+                                    class="mb-0"
+                                    style="
+                                      color: #4d514d;
+                                      font-size: 14px;
+                                      font-weight: 300;
+                                    "
+                                  >
+                                    Jl. Raya Pekajangan No. 610
+                                  </p>
+                                </div>
+
+                                <div class="col-md-5 text-right">
+                                  <p
+                                    class="mt-0 mb-1"
+                                    style="font-size: 13px; color: grey"
+                                  >
+                                    Info Khusus Rawat Inap
+                                  </p>
+                                  <p
+                                    class="mb-0"
+                                    style="font-size: 18px; color: #4d514d"
+                                  >
+                                    Tersedia <b>4</b> bed kosong R.
+                                    KEBIDANAN/NIFAS
+                                  </p>
+                                  <p
+                                    class="mb-0"
+                                    style="font-size: 14px; color: #4d514d"
+                                  >
+                                    Tanpa Antrian Pasien
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              class="card-footer text-right"
+                              style="background-color: #f1f3f0"
+                            >
+                              <div>
+                                <i style="font-size: 13px; color: grey"
+                                  >Konfirmasi Bed</i
+                                >
+                                <i
+                                  class="fa fa-phone"
+                                  style="color: #17181f; margin-left: 10px"
+                                ></i>
+                                <span style="font-size: 13px; color: grey">
+                                  0285785909
+                                </span>
+                                <div class="btn bed-details">
+                                  <a
+                                    href="https://yankes.kemkes.go.id/app/siranap/tempat_tidur?kode_rs=3326051&jenis=2&propinsi=33prop&kabkota=3326"
+                                    class="btn ml-1"
+                                    style="
+                                      background-color: #0cb7b7;
+                                      color: #ffffff;
+                                      padding: 6px 10px 6px 10px;
+                                      margin-left: 20px;
+                                    "
+                                  >
+                                    <i class="fa fa-bed" aria-hidden="true">
+                                      Bed Details</i
+                                    >
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-10 offset-md-1 mb-2 mt-4">
+                      <div class="row">
+                        <div class="cardRS col-md-12 mb-2">
+                          <div
+                            class="card-background"
+                            style="
+                              background-color: #f9fff6;
+                              border-radius: 10px;
+                            "
+                          >
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-md-7">
+                                  <h5 class="mb-2" style="color: #17181f">
+                                    RS Umum Daerah Dr. M. Ashari Pemalang
+                                  </h5>
+                                  <p
+                                    class="mb-0"
+                                    style="
+                                      color: #4d514d;
+                                      font-size: 14px;
+                                      font-weight: 300;
+                                    "
+                                  >
+                                    Jl. Gatot Subroto No.41,Pemalang
+                                  </p>
+                                </div>
+
+                                <div class="col-md-5 text-right">
+                                  <p
+                                    class="mt-0 mb-1"
+                                    style="font-size: 13px; color: grey"
+                                  >
+                                    Info Khusus Rawat Inap
+                                  </p>
+                                  <p
+                                    class="mb-0"
+                                    style="font-size: 18px; color: #f97b8b"
+                                  >
+                                    Bed IGD Penuh!
+                                  </p>
+                                  <p
+                                    class="mb-0"
+                                    style="font-size: 14px; color: #4d514d"
+                                  >
+                                    Tanpa Antrian Pasien
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              class="card-footer text-right"
+                              style="background-color: #f1f3f0"
+                            >
+                              <div>
+                                <i style="font-size: 13px; color: grey"
+                                  >Konfirmasi Bed</i
+                                >
+                                <i
+                                  class="fa fa-phone"
+                                  style="color: #17181f; margin-left: 10px"
+                                ></i>
+                                <span style="font-size: 13px; color: grey">
+                                  0284321614
+                                </span>
+                                <div class="btn bed-details">
+                                  <a
+                                    href="https://yankes.kemkes.go.id/app/siranap/tempat_tidur?kode_rs=3327010&jenis=1&propinsi=33prop&kabkota=3327"
+                                    class="btn ml-1"
+                                    style="
+                                      background-color: #0cb7b7;
+                                      color: #ffffff;
+                                      padding: 6px 10px 6px 10px;
+                                      margin-left: 20px;
+                                    "
+                                  >
+                                    <i class="fa fa-bed" aria-hidden="true">
+                                      Bed Details</i
+                                    >
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-10 offset-md-1 mb-2 mt-4">
+                      <div class="row">
+                        <div class="cardRS col-md-12 mb-2">
+                          <div
+                            class="card-background"
+                            style="
+                              background-color: #f9fff6;
+                              border-radius: 10px;
+                            "
+                          >
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-md-7">
+                                  <h5 class="mb-2" style="color: #17181f">
+                                    RS Umum Prima Medika
+                                  </h5>
+                                  <p
+                                    class="mb-0"
+                                    style="
+                                      color: #4d514d;
+                                      font-size: 14px;
+                                      font-weight: 300;
+                                    "
+                                  >
+                                    Jl. Slamet Riyadi No. 321 Pemalang
+                                  </p>
+                                </div>
+
+                                <div class="col-md-5 text-right">
+                                  <p
+                                    class="mt-0 mb-1"
+                                    style="font-size: 13px; color: grey"
+                                  >
+                                    Info IGD KHUSUS COVID
+                                  </p>
+                                  <p
+                                    class="mb-0"
+                                    style="font-size: 18px; color: #4d514d"
+                                  >
+                                    Tersedia <b>1</b> bed kosong IGD
+                                  </p>
+                                  <p
+                                    class="mb-0"
+                                    style="font-size: 14px; color: #4d514d"
+                                  >
+                                    Tanpa Antrian Pasien
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              class="card-footer text-right"
+                              style="background-color: #f1f3f0"
+                            >
+                              <div>
+                                <i style="font-size: 13px; color: grey"
+                                  >Konfirmasi Bed</i
+                                >
+                                <i
+                                  class="fa fa-phone"
+                                  style="color: #17181f; margin-left: 10px"
+                                ></i>
+                                <span style="font-size: 13px; color: grey">
+                                  0284324208
+                                </span>
+                                <div class="btn bed-details">
+                                  <a
+                                    href="https://yankes.kemkes.go.id/app/siranap/tempat_tidur?kode_rs=3327045&jenis=1&propinsi=33prop&kabkota=3327"
+                                    class="btn ml-1"
+                                    style="
+                                      background-color: #0cb7b7;
+                                      color: #ffffff;
+                                      padding: 6px 10px 6px 10px;
+                                      margin-left: 20px;
+                                    "
+                                  >
+                                    <i class="fa fa-bed" aria-hidden="true">
+                                      Bed Details</i
+                                    >
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-10 offset-md-1 mb-2 mt-4">
+                      <div class="row">
+                        <div class="cardRS col-md-12 mb-2">
+                          <div
+                            class="card-background"
+                            style="
+                              background-color: #f9fff6;
+                              border-radius: 10px;
+                            "
+                          >
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-md-7">
+                                  <h5 class="mb-2" style="color: #17181f">
+                                    RS Umum Islam Moga
+                                  </h5>
+                                  <p
+                                    class="mb-0"
+                                    style="
+                                      color: #4d514d;
+                                      font-size: 14px;
+                                      font-weight: 300;
+                                    "
+                                  >
+                                    Jl. Raya Moga-Pulosari km.02 ,Pemalang
+                                  </p>
+                                </div>
+
+                                <div class="col-md-5 text-right">
+                                  <p
+                                    class="mt-0 mb-1"
+                                    style="font-size: 13px; color: grey"
+                                  >
+                                    INFO IGD KHUSUS COVID
+                                  </p>
+                                  <p
+                                    class="mb-0"
+                                    style="font-size: 18px; color: #4d514d"
+                                  >
+                                    Tersedia <b>2</b> bed kosong IGD
+                                  </p>
+                                  <p
+                                    class="mb-0"
+                                    style="font-size: 14px; color: #4d514d"
+                                  >
+                                    Tanpa Antrian Pasien
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              class="card-footer text-right"
+                              style="background-color: #f1f3f0"
+                            >
+                              <div>
+                                <i style="font-size: 13px; color: grey"
+                                  >Konfirmasi Bed</i
+                                >
+                                <i
+                                  class="fa fa-phone"
+                                  style="color: #17181f; margin-left: 10px"
+                                ></i>
+                                <span style="font-size: 13px; color: grey">
+                                  0284583410
+                                </span>
+                                <div class="btn bed-details">
+                                  <a
+                                    href="https://yankes.kemkes.go.id/app/siranap/tempat_tidur?kode_rs=3327032&jenis=1&propinsi=33prop&kabkota=3327"
+                                    class="btn ml-1"
+                                    style="
+                                      background-color: #0cb7b7;
+                                      color: #ffffff;
+                                      padding: 6px 10px 6px 10px;
+                                      margin-left: 20px;
+                                    "
+                                  >
+                                    <i class="fa fa-bed" aria-hidden="true">
+                                      Bed Details</i
+                                    >
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End: info RS background -->
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End: Data Rumah Sakit -->
+
+    <!-- Start: Footer -->
+    <footer class="mt-5">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <img
+                class="mb-3"
+                src="img/logo-YukVaksin.svg"
+                alt="Footer Logo Yuk Vaksin"
+              />
+              <p>
+                It does not matter how slowly you go as long as you do not stop.
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-link">
+              <h4>Vaksinasi</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">About Us</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">Feutures</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">Schedule</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-link">
+              <h4>Support</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">Contact</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i>
+                  <a href="#">Administration</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i>
+                  <a href="#">Call Center</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-link">
+              <h4>Company</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">FAQ's</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i> <a href="#">Partner</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-link">
+              <h4>Our Social Network</h4>
+              <p>
+                Follow akun media sosial kami, untuk lebih update informasi
+                lanjutan
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Yuk Vaksin</span></strong
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- End: Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
