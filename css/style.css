@@ -1,0 +1,867 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+:root {
+  --montserrat: "Montserrat", sans-serif;
+  --Playfair-Display: "Playfair Display", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--montserrat);
+  background: linear-gradient(90deg, #f6f8fd 29px, transparent 1%) center,
+    linear-gradient(#f6f8fd 29px, transparent 1%) center, #bfc5d3;
+  background-size: 30px 30px;
+}
+
+/* Hero Section */
+.hero h2 {
+  font-size: 40px;
+  line-height: 60px;
+  color: #243c36;
+  font-family: var(--Playfair-Display);
+  margin-bottom: 30px;
+}
+
+.hero p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #b3bcb9;
+  margin-bottom: 50px;
+}
+
+.hero .btn-primary {
+  background: #36beec;
+  border-radius: 6px;
+  padding: 12px 18px;
+  border: none;
+  color: #fff;
+}
+
+.hero .btn-primary:hover {
+  background: #0f87da;
+  color: #fff;
+  box-shadow: 10px 12px 20px #e6e6e6;
+}
+
+.hero .btn-help {
+  background: none;
+  border: none;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 18px;
+  text-decoration: none;
+  color: #17181f;
+}
+
+.hero .btn-help:hover {
+  text-decoration: underline;
+}
+
+.feedback-title h2 {
+  font-size: 24px;
+  color: #17181f;
+  font-weight: 400;
+}
+
+.feedback-item h4 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.feedback-item p {
+  font-weight: 300;
+  font-size: 18px;
+  color: #17181f;
+}
+
+/* Product Description */
+.product-description {
+  background: #f6f7fb;
+  margin-top: 100px;
+}
+
+.product-description .tab-content {
+  background: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 0px 4px 4px 4px;
+  width: 1240;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+}
+
+.nav-tabs li button {
+  background: #f4f4f4;
+  border-radius: 4px 4px 0px 0px;
+  color: #a3a3a3;
+  font-weight: 300;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  filter: drop-shadow(0px -10px 15px rgba(0, 0, 0, 0.06));
+  font-weight: 400;
+}
+
+.text-title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #243c36;
+}
+
+.corona-text {
+  color: #2a9dec;
+}
+
+.text-detail {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #d0d0d0;
+}
+
+.fc-green {
+  color: #27ae60;
+}
+
+/* Jenis Vaksin */
+.jenis-vaksin {
+  margin-top: 70px;
+}
+
+.jenis-vaksin h2,
+.pasca-vaksin h2 {
+  font-weight: 500;
+  font-size: 40px;
+  color: #243c36;
+  font-family: var(--Playfair-Display);
+}
+
+.jenis-vaksin p,
+.pasca-vaksin p {
+  font-weight: 300;
+  font-size: 20px;
+  color: #b3bcb9;
+  line-height: 30px;
+}
+
+.jenis-vaksin h3 {
+  color: #17181f;
+  font-size: 24px;
+}
+
+.teks-deskripsi {
+  font-weight: 300;
+  font-size: 18px !important;
+  line-height: 30px;
+  text-align: left;
+}
+
+.see-more {
+  color: #2a9dec;
+}
+
+/* Pasca Vaksin  */
+.konten-pasca-vaksin .benefit .icon {
+  width: 24px;
+  height: 24px;
+  float: left;
+  margin-right: 12px;
+}
+
+.descripsi-konten {
+  font-weight: 300 !important;
+  color: #17181f !important;
+  font-size: 16px !important;
+  line-height: 30px !important;
+}
+
+/* Daftar Vaksinasi */
+.daftar-vaksin {
+  margin-top: 100px;
+}
+
+.daftar-title h4 {
+  color: #fff;
+  margin-top: 60px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.daftar-title a {
+  padding: 8px 14px;
+  border-radius: 4px;
+  background: #fff;
+  color: #2a9dec;
+  text-decoration: none;
+  font-weight: 300;
+  transition: all 0.3s ease;
+}
+
+.daftar-title a:hover {
+  box-shadow: 10px 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Footer */
+footer {
+  font-size: 14px;
+  background: #060c23;
+}
+
+footer .footer-top {
+  padding: 60px 0 30px 0;
+  background: #fff;
+}
+
+footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+footer .footer-top .footer-contact h4 {
+  margin: 0 0 10px 0;
+  padding: 2px 0 2px 0;
+  width: 176px;
+  height: 52px;
+}
+
+footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  color: #5e5e5e;
+}
+
+footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #37517e;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+footer .footer-top .footer-link {
+  margin-bottom: 30px;
+}
+
+footer .footer-top .footer-link ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer-top .footer-link ul i {
+  padding-right: 2px;
+  color: #47b2e4;
+  font-size: 18px;
+  line-height: 1;
+}
+
+footer .footer-top .footer-link ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+footer .footer-top .footer-link ul li:first-child {
+  padding-top: 0;
+}
+
+footer .footer-top .footer-link ul a {
+  color: #777;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+}
+
+footer .footer-top .footer-link ul a:hover {
+  text-decoration: underline;
+  color: #47b2e4;
+}
+
+footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #47b2e4;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+footer .footer-top .social-links a:hover {
+  background: #209dd8;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .footer-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+footer .copyright {
+  float: left;
+}
+
+footer .credits {
+  float: right;
+  font-size: 13px;
+}
+
+footer .credits a {
+  transition: 0.3s;
+}
+
+/* Search Rumah Sakit */
+.rumah-sakit .rs-header-title h2 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: var(--Playfair-Display);
+  color: #243c36;
+  line-height: 2;
+}
+
+.rumah-sakit .rs-header-title p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #17181f;
+}
+
+/* Layanan Rumah Sakit */
+.layanan-card-background {
+  background: #fffbf8;
+  border-radius: 30px;
+  padding: 0 0 40px 0;
+}
+
+.layanan-header-title h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #17181f;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #17181f;
+}
+
+.card-text {
+  font-size: 18px;
+  font-weight: 300;
+  color: #c4c4c4;
+}
+
+.links-see-all a {
+  color: #2a9dec;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.links-see-all a:hover {
+  color: #0371bc;
+  text-decoration: underline;
+}
+
+.links-layanan-all a {
+  font-size: 24px;
+  color: #2a9dec;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.links-layanan-all a:hover {
+  color: #0371bc;
+  text-decoration: underline;
+}
+
+/* Features */
+.features h2 {
+  color: #243c36;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.features p {
+  font-weight: 300;
+  font-size: 20px;
+  color: #b3bcb9;
+}
+
+.link-produk a {
+  color: #17181f;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.link-produk a:hover {
+  color: #0371bc;
+  text-decoration: underline;
+}
+
+.price-produk {
+  color: #bebebe;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Data Info Vaksin */
+.card-vaksin {
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card-vaksin h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #17181f;
+}
+
+.card-vaksin h5 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #bebebe;
+}
+
+.table-vaksin {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  color: #3f4254;
+  background-color: transparent;
+}
+
+.table-vaksin.table-head-bg thead tr,
+.table-vaksin.table-head-bg thead th {
+  background-color: #f3f6f9;
+  letter-spacing: 1px;
+}
+
+.table-vaksin.table-head-custom thead tr,
+.table-vaksin.table-head-custom thead th {
+  color: #b5b5c3 !important;
+  text-transform: uppercase;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  font-size: 14px;
+}
+
+/* Data Info Vaksin */
+.card-title {
+  margin-bottom: 2rem;
+}
+
+.card-label {
+  font-size: 26px;
+  color: #17181f;
+  font-weight: 600;
+}
+
+.card-label span {
+  font-size: 18px;
+  color: #b3bcb9 !important;
+  font-weight: 300;
+}
+
+.accordion .accordion-item .accordion-button {
+  border: 0;
+  color: #17181f;
+  font-size: 18px;
+  font-weight: 600;
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.accordion-button:not(.collapsed) {
+  background: none;
+}
+
+/* Hero Center  */
+.section-support {
+  margin-top: 150px;
+}
+
+.section-support .heading h2 {
+  color: #243c36;
+  font-size: 30px;
+  line-height: 43px;
+}
+
+.hero-center {
+  background-image: url(/img/help-center.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  padding: 0 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.tab-box {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.tab-support .tab-box img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.tab-support .tab-box.active img,
+.section-support .tab-support .tab-box:hover img {
+  -webkit-filter: none;
+  filter: none;
+}
+
+.tab-support .tab-box.active a,
+.section-support .tab-support .tab-box:hover a {
+  color: #20a4dc;
+  opacity: 1;
+}
+
+.accordion-help {
+  margin-top: 100px;
+}
+
+/* Contact Section */
+.hero-contact h2 {
+  color: #243c36;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.hero-contact p {
+  color: #b3bcb9;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* Channel Contact */
+.channel-contact {
+  margin-top: 100px;
+}
+
+.channel-contact .item-pricing {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.channel-contact .item-pricing .icon {
+  width: 70px;
+  height: 70px;
+}
+
+.channel-contact .item-pricing .title {
+  color: #17181f;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.channel-contact .item-pricing .capt {
+  font-size: 18px;
+  font-weight: 300;
+  color: #b3bcb9;
+}
+
+.channel-contact .item-pricing .btn {
+  min-width: 100%;
+}
+
+.btn-secondary {
+  background: #e5e9f2;
+  color: #34364a;
+  font-size: 16px;
+  padding: 11px 42px;
+  border-radius: 100px;
+  border: 0;
+  font-weight: 500;
+  transition: all 0.4s;
+}
+
+.btn-secondary:hover {
+  background: #e5e9f2;
+  color: #34364a;
+  box-shadow: 10px 12px 20px 0 #e7ebf5;
+  transition: all 0.4s;
+}
+
+/* Contact Informasi */
+.contact-information {
+  margin-top: 100px;
+}
+
+.contact-information .information-background {
+  background-color: #fff;
+  border-radius: 30px;
+  padding-bottom: 30px;
+}
+
+.information-background p {
+  color: #2a9dec;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.information-background h3 {
+  color: #243c36;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.contact-center_info {
+  margin-top: 60px;
+}
+
+.contact-center_info .contact-center_single {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.contact-center_single h4 {
+  margin: 0;
+  color: #17181f;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1em;
+}
+
+.contact-icon i {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  background-image: linear-gradient(90deg, #0349a6 0%, #15c27b 100%);
+  margin-right: 20px;
+}
+
+.contact-center_single:nth-child(2) .contact-icon i {
+  background-image: linear-gradient(90deg, #4a0e8f 0%, #b430a7 100%);
+}
+
+/* Syarat Layanan */
+.syarat-layanan h2 {
+  color: #243c36;
+  font-weight: 500;
+  font-size: 34px;
+}
+
+.syarat-layanan p {
+  color: #b3bcb9;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* Package Layanan Pesan Antar */
+.package-layanan {
+  background: #fff8f2;
+}
+
+.first-package {
+  background: #ffffff;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.second-package {
+  background: #0f0b31;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.first-package h5 {
+  padding-top: 20px;
+  margin-left: 20px;
+  color: #021d96;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.first-package h3 {
+  margin-top: 15px;
+  margin-left: 20px;
+  color: #021d96;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.first-package span {
+  font-weight: 300;
+  font-size: 18px;
+  color: #a4a4a4;
+}
+
+.pisah-package {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px dashed #f0f0f0;
+  transform: rotate(0.07deg);
+}
+
+.btn-first a {
+  background: #14387d;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 11px 50px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.btn-first a:hover {
+  background: #042360;
+  color: #fff;
+}
+
+.second-package h5 {
+  padding-top: 20px;
+  margin-left: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.second-package h3 {
+  margin-top: 15px;
+  margin-left: 20px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.second-package span {
+  font-weight: 300;
+  font-size: 18px;
+  color: #e2e2e2;
+}
+
+.pisah-package {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px dashed #fff;
+  transform: rotate(0.07deg);
+}
+
+.second-package .package-plan p {
+  color: #fff !important;
+  margin-left: 10px !important;
+}
+
+.btn-second a {
+  background: #e2e2e2;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #14387d;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 11px 50px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+@media only screen and (max-width: 770px) {
+  /* Hero Section */
+  .hero .btn-primary {
+    width: 100%;
+  }
+
+  .hero .btn-help {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  /* Jenis Vaksin */
+  .jenis-vaksin h2,
+  .pasca-vaksin h2 {
+    font-size: 22px;
+  }
+
+  .jenis-vaksin p,
+  .pasca-vaksin p {
+    font-size: 18px;
+  }
+
+  .teks-deskripsi {
+    font-size: 16px !important;
+  }
+
+  .text-title {
+    font-size: 18px;
+    color: #243c36;
+  }
+
+  .text-detail {
+    font-size: 14px;
+    line-height: 30px;
+    color: #d0d0d0;
+  }
+
+  .tab-content ul li {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  /* Hero Center  */
+  .tab-support .tab-box img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .tab-box p {
+    font-size: 16px;
+  }
+
+  .section-support .heading h2 {
+    font-size: 18px;
+  }
+
+  /* Contact Section */
+  .hero-contact h2 {
+    font-size: 30px;
+  }
+
+  .hero-contact p {
+    font-size: 16px;
+  }
+}
